@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab 09 Exercise 03
+        </title>
+    </head>
+    <body>
+        <script src="./formchecker.js"></script>
+	<link rel="stylesheet" href="./style.css">
+	 <h1>Pie Market</h1>
+        <form onsubmit="checkForm()" action="./customerBackend.php" method="post">
+            <label for="username" id="userLabel">Username:</label>
+            <input name="username" type="text" id="username"></br></br>
+            <label for="password" id="passwordLabel">Password:</label>
+            <input name="password" id="password" type="password"></br></br>
+            <label for="item1" id="item1Label" >Apple Pie $3.00</label></br>
+            <input type="number" name="item1" id="item1" class="item" value="0"></br>
+            <label for="item2" id="item2Label">Pumpkin Pie $4.00</label></br>
+            <input type="number" name="item2" id="item2" class="item" value="0"></br>
+            <label for="item3" id="item3Label">Chicken Pot Pie $5.00</label></br>
+            <input type="number" name="item3" id="item3" class="item" value="0"></br></br>
+            <label for="shipping" id="shippingLabel">Shipping</label></br>
+            <input type="radio" name="shipping" id="shipping1" value="Free 7 Day">Free 7 Day</br>
+            <input type="radio" name="shipping" id="shipping2" value="$50.00 Over Night">50.00 Over Night</br>
+            <input type="radio" name="shipping" id="shipping3" value="$5.00 Three Day">$5.00 Three Day</br>
+            <input type="button" value="Reset" onclick="reset()" id="rest"></br>
+            <input type="submit">            
+        </form>
+    </body>
+</html>
